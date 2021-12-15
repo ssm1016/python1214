@@ -13,7 +13,8 @@ line = f.readline()
 # EOF를 찾기
 while (line != ''):
     # \\\\ 백슬래시가 연속 4개인지아닌지 
-    if (re.search("\d{4}", line)):
+    # if (re.search("\d{4}", line)):
+    if (re.search("error", line)):
         g.write(line + "\n")
     line = f.readline()
 
